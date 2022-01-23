@@ -39,6 +39,17 @@ section {
   padding: 3rem 9%;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.heading h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 0.6rem;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -163,17 +174,114 @@ section {
   text-align: center;
 }
 
-@media (max-width: 1450px) {
-  .header {
-    padding: 6rem;
-  }
-  .header .logo {
-    position: absolute;
-    top: 6rem;
-    left: 44%;
-    transform: translateY(0%);
-  }
+.service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
 }
+.service .box {
+  text-align: center;
+  padding: 2rem;
+}
+.service .box i {
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  font-size: 3.5rem;
+  color: #000;
+  background-color: #eacf4f;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+.service .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.service .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+}
+.menu .box-container .box {
+  text-align: center;
+}
+.menu .box-container .box:hover img {
+  transform: translateY(-1rem);
+}
+.menu .box-container .box img {
+  height: 30rem;
+}
+.menu .box-container .box .content {
+  padding: 2rem 0;
+}
+.menu .box-container .box .content .stars {
+  margin-bottom: 1rem;
+}
+.menu .box-container .box .content .stars i {
+  font-size: 2rem;
+  color: #eacf4f;
+}
+.menu .box-container .box .content h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.menu .box-container .box .content .price {
+  font-size: 2rem;
+  line-height: 2;
+  color: #aaa;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.about .image {
+  flex: 1 1 40rem;
+}
+.about .image img {
+  width: 100%;
+}
+.about .content {
+  flex: 1 1 40rem;
+}
+.about .content .title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.about .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 2rem 0;
+}
+.about .icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.about .icons h3 {
+  flex: 1 1 40rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.about .icons h3 i {
+  padding-right: 0.5rem;
+  color: #eacf4f;
+}
+
 @media (max-width: 1420px) {
   .header {
     padding: 6rem;
@@ -348,6 +456,11 @@ section {
   .header .logo {
     transform: translateX(0);
     left: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .home .content h3 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 450px) {

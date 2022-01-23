@@ -68,6 +68,17 @@ section{
     padding: 3rem 9%;
 }
 
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3{
+        @include title-text(2.5rem);
+        padding-left: .6rem;
+    }
+
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -221,22 +232,122 @@ section{
 }
 
 
+.service{
+    @include grid(31rem);
+    .box{
+        text-align: center;
+        padding: 2rem;
+        
+        i{
+            height: 7rem;
+            width: 7rem;
+            line-height: 7rem;
+            font-size: 3.5rem;
+            color: $black;
+            background-color: $yellow;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+        }
 
+        h3{
+            padding: 1rem 0;
+            @include title-text(2rem);
+        }
 
+        p{
+            @include grap-text(1.5rem);
+        }
+    }
 
-//media queries
-@media (max-width: 1450px){
-    .header{
-        padding: 6rem;
+}
 
-        .logo{
-            position: absolute;
-            top: 6rem;
-            left: 44%;
-            transform: translateY(-0%);
-         }
+.menu{
+
+    .box-container{
+        @include grid(40rem);
+
+        .box{
+            
+            text-align: center;
+
+            &:hover img{
+                transform: translateY(-1rem);
+            }
+
+            img{
+                height: 30rem;
+            }
+
+            .content{
+                padding: 2rem 0;
+                
+                .stars{
+                    margin-bottom: 1rem;
+                    i{
+                        font-size: 2rem;
+                        color: $yellow;
+                    }
+                }
+
+                h3{
+                    @include title-text(1.8rem);
+                }
+
+                .price{
+                    @include grap-text(2rem);
+                }
+            }
+        }
+    }
+    
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .image{
+
+        flex: 1 1 40rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .content{
+        flex: 1 1 40rem;
+
+        .title{
+            @include title-text(2.5rem);
+        }
+
+        p{
+            @include grap-text(1.5rem);
+            padding: 2rem 0;
+        }
+    }
+
+    .icons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        h3{
+            flex: 1 1 40rem;
+            @include title-text(1.7rem);
+
+            i{
+                padding-right: 0.5rem;
+                color: $yellow;
+            }
+        }
     }
 }
+
+//media queries
 
 @media (max-width: 1420px){
     .header{
@@ -249,6 +360,8 @@ section{
             transform: translateY(-0%);
          }
     }
+
+
 }
 
 @media (max-width: 1320px){
@@ -446,6 +559,13 @@ section{
         }
     }
     
+}
+
+@media (max-width: 768px){
+    
+    .home .content h3{
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 450px){
