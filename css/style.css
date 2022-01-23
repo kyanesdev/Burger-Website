@@ -35,6 +35,25 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  padding: 3rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #fff;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  background: none repeat;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+.btn:hover {
+  color: #000;
+  background: #fff;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -114,6 +133,34 @@ body {
 }
 .header .fa-times-circle {
   transform: rotate(180deg);
+}
+
+.home {
+  margin-top: 7rem;
+  background: url(../images/home-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 70rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.home .content img {
+  width: 100%;
+}
+.home h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home p {
+  font-size: 1.7rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 2rem 0;
+  text-transform: none;
+  text-align: center;
 }
 
 @media (max-width: 1450px) {
@@ -209,6 +256,10 @@ body {
     padding: 6rem;
   }
 
+  section {
+    padding: 3rem 2rem;
+  }
+
   .logo {
     position: absolute;
     top: 6rem;
@@ -263,6 +314,10 @@ body {
 @media (max-width: 1039px) {
   html {
     font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
   }
 
   .header {
