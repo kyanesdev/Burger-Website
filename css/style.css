@@ -42,6 +42,7 @@ section {
 .heading {
   text-align: center;
   margin-bottom: 3rem;
+  transform: translateY(0%);
 }
 .heading h3 {
   font-size: 2.5rem;
@@ -280,6 +281,54 @@ section {
 .about .icons h3 i {
   padding-right: 0.5rem;
   color: #eacf4f;
+}
+
+.reviews {
+  /*
+      .heading{
+          text-align: center;
+          margin-bottom: 3rem;
+          transform: translateY(-100%);
+
+          h3{
+              @include title-text(2.5rem);
+              padding-left: .6rem;
+          }
+
+      }
+  */
+}
+.reviews .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.reviews .box-container .box {
+  text-align: center;
+  padding: 2rem 0;
+}
+.reviews .box-container .box img {
+  border-radius: 50%;
+}
+.reviews .box-container .box h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 3rem 0;
+}
+.reviews .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  transform: translateY(-10%);
+}
+.reviews .box-container .box .stars {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #eacf4f;
+}
+.reviews .box-container #box-ladri {
+  transform: translateY(-2px);
 }
 
 @media (max-width: 1420px) {
