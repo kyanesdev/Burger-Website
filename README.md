@@ -2,5 +2,5 @@
 Tecnologias utilizadas:
 
 * *HTML*
-* *SASS*
+* *SCSS*
 * *Javascript*
