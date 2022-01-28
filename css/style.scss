@@ -471,6 +471,109 @@ section{
     }
 }
 
+
+
+.blogs{
+    .box-container{
+        @include grid(31rem);
+
+        .box{
+            position: relative;
+
+            .image{
+                height: 25rem;
+                overflow: hidden;
+                position: relative;
+
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 2rem;
+                    background: $black;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 100;
+                    
+
+                    a{
+                        font-size: 1.5rem;
+                        color: $white;
+
+                        i{
+                            padding-right: 0.5rem;
+                            color: $yellow;
+                            
+                        }
+
+                        &:hover{
+                            color: $yellow;
+                        }
+                        
+
+                        
+                    }
+
+                    
+                    
+                    
+                }
+
+                img{
+                    height:100%;
+                    width: 100%;
+                    object-fit: cover;
+                    
+                }
+            }
+
+        }
+
+        .content{
+            padding: 1rem;
+            text-align: center;
+            h3{
+                @include title-text(1.8rem);
+            }
+
+            p{
+                padding: 1rem;
+                @include grap-text(1.4rem);
+                position: relative;
+            }
+        }
+
+    }
+}
+
+
+.footer{
+
+    text-align: center;
+    background: linear-gradient(transparent, $black);
+
+    .links{
+        a{
+            margin: 1rem;
+        }
+    }
+
+    .credit{
+        @include grap-text(2rem);
+        padding-top: 2rem;
+
+        span{
+            color: $yellow;
+        }
+    }
+
+}
+
+
+
+
 //media queries
 
 @media (max-width: 1420px){
